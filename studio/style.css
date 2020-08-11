@@ -30,6 +30,7 @@ body{
     background-size: contain;
     zoom: .2;
     position: relative;
+    font-size: 32px;
 }
 .square{
     min-width: 1200px;
@@ -51,10 +52,14 @@ body{
     font-family: 'uroob',Arial, Helvetica, sans-serif !important;
 }
 
-.square-en{}
-.square-ml{}
-.long-en{}
-.long-ml{}
+.square-en,
+.square-ml{
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.00) 20%, rgba(0,0,0,0.00) 61%, rgba(0,0,0,0.60) 100%);
+}
+.long-en,
+.long-ml{
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.00) 13%, rgba(0,0,0,0.00) 74%, rgba(0,0,0,0.60) 100%);
+}
 
 .name-ml,
 .name-en{
@@ -67,7 +72,7 @@ body{
 .desc-ml,
 .desc-en{
     position: absolute;
-    bottom: 320px;
+    bottom: 230px;
     left: 40px;
     font-size: 32px;
 }
@@ -153,4 +158,14 @@ button{
     padding: 10px 20px;
     min-width: 250px;
 
+}
+
+.phone{
+    margin-top: 10px;
+}
+
+.delivery img{
+    max-height: 26px;
+    margin-right: 20px;
+    margin-top: 20px;
 }
