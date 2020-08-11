@@ -169,3 +169,8 @@ button{
     margin-right: 20px;
     margin-top: 20px;
 }
+.vr{
+    border: 1px solid #fff;
+    width: 1px;
+    height: 10px;
+}
