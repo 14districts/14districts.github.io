@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Poster Studio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+
+
+</head>
+<body>
+  
+<div class="container">
+  <h3 class="mt-5">Campaign Poster Studio</h3>
+  <hr>
+  <div class="row">
+    <div class="col-6 d-flex flex-column">
+      <div class="">
+        <label for="bg">Upload Dish Image</label>
+        <input type="file" id="bg" name="bg" accept="image/png, image/jpeg" onchange="bgUpload(event)">
+      </div>
+      <div class="">
+        <label for="bg">Background Color</label>
+        <input type="color" id="bg" name="bg" value="#000000" class="input-color-picker" data-id="bg">  
+      </div>
+      <div class="">
+        <label for="front">Text Color</label>
+        <input type="color" id="front" name="front" value="#ffffff" class="input-color-picker" data-id="front">
+      </div>
+      <div class="row">
+        <div class="col-6 d-flex flex-column">
+          <input type="text" placeholder="Dish Name in English" id="name-en">
+          <textarea rows="10" placeholder="Dish Description in English" id="desc-en"></textarea>
+        </div>
+        <div class="col-6 d-flex flex-column">
+          <input type="text" placeholder="മലയാളത്തിൽ വിഭവത്തിന്റെ പേര് " id="name-ml">
+          <textarea rows="10" placeholder="മലയാളത്തിൽ വിഭവത്തിന്റെ വിവരണം" id="desc-ml"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="row mb-1">
+        <div class="">
+          SQ_EN
+          <div class="poster square square-en mr-3" id="square-en">
+            <div class="name-en"></div>
+            <div class="campaign">Savour the Flavour</div>
+            <div class="campaign-context">Onam Sadhya</div>
+            <div class="v-rule"></div>
+            <div class="desc-en"></div>
+            <div class="credits">
+              <img src="./en-logo.svg" class="logo">
+            </div>
+          </div>
+        </div>
+        <div class="">
+          SQ_ML
+          <div class="poster square square-ml" id="square-ml">
+            <div class="name-ml ml"></div>
+            <div class="campaign ml">രുചിയറിയാം</div>
+            <div class="campaign-context ml">ഓണസദ്യ</div>
+            <div class="v-rule"></div>
+            <div class="desc-ml ml"></div>
+            <div class="credits">
+              <img src="./ml-logo.svg" class="logo">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="">
+          LO_EN
+          <div class="poster long long-en mr-3" id="long-en">
+            <div class="name-en"></div>
+            <div class="campaign">Savour the Flavour</div>
+            <div class="campaign-context">Onam Sadhya</div>
+            <div class="v-rule"></div>
+            <div class="desc-en"></div>
+            <div class="credits">
+              <img src="./en-logo.svg" class="logo">
+            </div>
+          </div>
+        </div>
+        <div class="">
+          LO_ML
+          <div class="poster long long-ml" id="long-ml">
+            <div class="name-ml ml"></div>
+            <div class="campaign ml">രുചിയറിയാം</div>
+            <div class="campaign-context ml">ഓണസദ്യ</div>
+            <div class="v-rule"></div>
+            <div class="desc-ml ml"></div>
+            <div class="credits">
+              <img src="./ml-logo.svg" class="logo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="my-5">
+  <div class="row d-flex justify-content-center mb-5">
+    <button onclick="download()">Download All</button>
+  </div>
+  <hr class="my-2">
+  <footer>A <a href="https://beautevil.design" target="_blank">beautevil.design</a></footer>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="./html2canvas.min.js"></script>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
