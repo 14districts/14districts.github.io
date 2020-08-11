@@ -53,10 +53,10 @@ function bgUpload(event) {
     const reader = new FileReader();
     reader.readAsDataURL(event.target.files[0]);
     reader.addEventListener("load", function(e) {
-        $(".poster").css("background-image", "url(" +  e.target["result"] + ")");
+        $(".square").css("background-image", "linear-gradient(180deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.00) 20%, rgba(0,0,0,0.00) 61%, rgba(0,0,0,0.60) 100%), url(" +  e.target["result"] + ")");
+        $(".long").css("background-image", "linear-gradient(180deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.00) 13%, rgba(0,0,0,0.00) 74%, rgba(0,0,0,0.60) 100%), url(" +  e.target["result"] + ")");
     });
 }
-
 
 function download() {
     document.querySelectorAll(".poster").forEach(item => {
