@@ -1,0 +1,175 @@
+@font-face {
+    font-family: "ropa";
+    src: url("fonts/Ropa/RopaSans-Regular.woff") format("woff"),
+    url("fonts/Ropa/RopaSans-Regular.woff2") format("woff")
+}
+
+@font-face {
+    font-family: "uroob";
+    src: url("fonts/uroob/Uroob-Regular.woff") format("woff"),
+    url("fonts/uroob/Uroob-Regular.woff2") format("woff")
+}
+
+
+
+:root{
+    --bg: #000;
+    --front: #fff;
+}
+
+body{
+    background: #f3f3fc;
+    color: #3a506b;
+}
+
+.poster{
+    background-color: var(--bg);
+    color: var(--front);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    zoom: .2;
+    position: relative;
+    font-size: 32px;
+}
+.square{
+    min-width: 1200px;
+    min-height: 1200px;
+    max-width: 1200px;
+    max-height: 1200px;
+}
+.long{
+    min-width: 1200px;
+    min-height: 2134px;
+    max-width: 1200px;
+    max-height: 2134px;
+}
+
+*{
+    font-family: 'ropa',Arial, Helvetica, sans-serif;
+}
+.ml{
+    font-family: 'uroob',Arial, Helvetica, sans-serif !important;
+}
+
+.square{
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.00) 20%, rgba(0,0,0,0.00) 61%, rgba(0,0,0,0.60) 100%);
+}
+.long{
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.00) 13%, rgba(0,0,0,0.00) 74%, rgba(0,0,0,0.60) 100%);
+}
+
+.name-ml,
+.name-en{
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    font-size: 120px;
+}
+
+.desc-ml,
+.desc-en{
+    position: absolute;
+    bottom: 230px;
+    left: 40px;
+    font-size: 32px;
+}
+
+.campaign{
+    font-size: 80px;
+    position: absolute;
+    text-align: right;
+    right: 40px;
+    top: 50px;
+}
+.campaign-context{
+    font-size: 40px;
+    position: absolute;
+    text-align: right;
+    right: 40px;
+    top: 130px;
+}
+
+.credits{
+    border-top: 2px solid #fff;
+    position: absolute;
+    bottom: 80px;
+    left: 50px;
+    height: 120px;
+    width: 1100px;
+    color: #fff;
+}
+
+.logo{
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+.v-rule{
+    position: absolute;
+    width: 1px;
+    height: calc(100% - 600px);
+    top: 200px;
+    left: 60px;
+    border-left: 2px solid var(--front);
+}
+
+
+input[type=text],
+textarea{
+    border-radius: 8px;
+    box-shadow: inset -4px -4px 8px 0 rgba(255, 255, 255, 0.6), inset 4px 4px 8px 0 rgba(58, 80, 107, 0.1);
+    border: solid 2px rgba(188, 201, 208, 0.4);
+    padding: 10px 15px;
+    background: #f3f3fc;
+    margin: 10px 0;
+}
+
+input[type="color" i] {
+    border-radius: 4px;
+    width: 44px;
+    height: 44px;
+    box-shadow: inset -4px -4px 8px 0 rgba(255, 255, 255, 0.6), inset 4px 4px 8px 0 rgba(58, 80, 107, 0.1);
+    border: solid 2px rgba(188, 201, 208, 0.4);
+    cursor: default;
+    padding: 1px 2px;
+}
+
+h3{
+    background-image: linear-gradient(275deg, #0084d4, #41a5a3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+button{
+    border-radius: 8px;
+    box-shadow: -4px -4px 8px 0 rgba(255, 255, 255, 0.9), 4px 4px 8px 0 rgba(58, 80, 107, 0.08), 0 20px 10px -10px rgba(28, 37, 65, 0.3), inset -4px -4px 8px 0 rgba(255, 255, 255, 0.1);
+    border-style: solid;
+    border-width: 2px;
+    border-image-source: linear-gradient(79deg, #0084d4 4%, #5bc0be 97%);
+    border-image-slice: 1;
+    background-image: linear-gradient(79deg, #0084d4 4%, #5bc0be 97%), linear-gradient(79deg, #0084d4 4%, #5bc0be 97%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    color: #fff;
+    padding: 10px 20px;
+    min-width: 250px;
+
+}
+
+.phone{
+    margin-top: 10px;
+}
+
+.delivery img{
+    max-height: 26px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.vr{
+    border: 1px solid #fff;
+    width: 1px;
+    height: 10px;
+}
