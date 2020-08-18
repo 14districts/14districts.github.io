@@ -395,7 +395,7 @@ h1 {
 .x_007_img_thumbnail_text > h1 { font-size: 22px; margin-bottom: 3px; }
 .x_007_img_thumbnail_text > h1 > span { margin-left: 3px; }
 .x_007_img_thumbnail_text > p { width: 100%; font-size: 12px; }
-.x_007_img_thumbnail_text > a { width: 100px; height: 20px; font-size: 11px; margin-top: 5px; line-height: 18px; }
+.x_007_img_thumbnail_text > a { min-width: 100px; min-height: 20px; font-size: 11px; margin-top: 5px; line-height: 18px; }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
