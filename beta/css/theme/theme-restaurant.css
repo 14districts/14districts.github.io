@@ -408,6 +408,7 @@ h1 {
 .x_007_img_thumbnail_text > h1 { font-size: 22px; margin-bottom: 3px; }
 .x_007_img_thumbnail_text > p { width: 95%; font-size: 14px; }
 .x_007_img_thumbnail_text > a { margin-top: 5px; }
+.text-right { text-align: center!important;}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
