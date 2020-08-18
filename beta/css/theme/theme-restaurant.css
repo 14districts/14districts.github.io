@@ -156,10 +156,10 @@
  font-family: 'Open Sans', sans-serif;
 }
 .x_007_img_thumbnail_text > h1 {
- color: #968B82;
+ color: #fff;
  text-transform: capitalize;
  font-family: 'Raleway', sans-serif;
- font-size: 30px;
+ font-size: 8rem;
  font-weight: 400;
  margin-bottom: 20px;
  -webkit-animation-delay: 0.7s;
@@ -170,13 +170,13 @@
  animation-timing-function: cubic-bezier(.23, 1, .32, 1);
 }
 .x_007_img_thumbnail_text > h1 > span {
- color: #b67e43;
+ color: #fff;
  margin-left: 10px;
 }
 .x_007_img_thumbnail_text > p {
  width: 80%;
- color: #878787;
- font-size: 13px;
+ color: #fff;
+ font-size: 2.5rem;
  position: relative;
  text-transform: none;
  -webkit-animation-delay: 1s;
@@ -187,11 +187,12 @@
  animation-timing-function: cubic-bezier(.23, 1, .32, 1);
 }
 .x_007_img_thumbnail_text > a {
- width: 135px;
- height: 30px;
+ width: 200px;
+ min-height: 30px;
+ padding: 10px 20px;
  color: #ffffff;
  display: block;
- font-size: 11px;
+ font-size: 1.5rem;
  font-weight: 600;
  margin-top: 20px;
  line-height: 28px;
@@ -219,7 +220,6 @@
 .nav-transparent-nav>li>a, 
 .nav-transparent-nav>li>a:visited, 
 .nav-transparent-nav .divider {
- color: #968B82 !important;
  font-family: 'Raleway', sans-serif;
  font-size: 18px;
  text-transform: capitalize;
@@ -413,4 +413,10 @@ h1 {
 @media (min-width: 768px) and (max-width: 991px) {
 /*---------- INDICATORS THUMBNAIL CONTROL ----------*/
 .x_007_img_thumbnail_indicators > .carousel-indicators { height: 70%; }
+}
+
+
+
+.services{
+	min-height: 340px;
 }
