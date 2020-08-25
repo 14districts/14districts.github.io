@@ -12375,3 +12375,11 @@ ul.filter > li > span {
 	font-weight: 600;
 	margin-bottom: 0;
 }
+.del-part{
+	max-height: 20px;
+	margin-right: 10px;
+	opacity: 0.7;
+}
+.del-part:hover{
+	opacity: 1;
+}
